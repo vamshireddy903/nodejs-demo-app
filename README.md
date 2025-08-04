@@ -61,3 +61,14 @@ Dockerfile – For Docker build
 .github/workflows/deploy.yml – GitHub Actions workflow
 
 Readme.md --about workflow
+
+<img width="940" height="425" alt="image" src="https://github.com/user-attachments/assets/7b935761-4be2-4594-b743-f5c91a0605f9" />
+
+<img width="940" height="419" alt="image" src="https://github.com/user-attachments/assets/d4e7aba8-ec49-4c9c-9ec3-fbc195135b5b" />
+
+<img width="940" height="413" alt="image" src="https://github.com/user-attachments/assets/a14108cd-2081-45bc-acd1-adde0db0b762" />
+
+<img width="940" height="421" alt="image" src="https://github.com/user-attachments/assets/2f300e09-95dd-4e94-9d7b-871b8b20aee2" />
+
+<img width="1912" height="931" alt="image" src="https://github.com/user-attachments/assets/27ed8bbb-14f5-4a90-8f3a-8d8f292ab6b3" />
+
