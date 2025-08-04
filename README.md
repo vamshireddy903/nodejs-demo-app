@@ -42,6 +42,9 @@ Created .github/workflows/main.yml
 
 After developing and dockerizing the Node.js application, I initially tested the CI/CD pipeline using a GitHub hosted runner. The workflow executed successfully, verifying the build process and Docker container run through the GitHub Actions tab. Once confirmed I proceeded to configure a self-hosted runner on my local machine. I registered the runner with the repository via the GitHub settings and reran the workflow, which again executed successfully on the self hosted runner.
 
+<img width="940" height="385" alt="image" src="https://github.com/user-attachments/assets/05d6f1ed-65c6-42ee-b0ad-e380d6b50e74" />
+
+
 To securely manage sensitive information, I stored necessary credentials and configuration values in GitHub → Actions → New Repository Secrets under Secrets and variables. These were then accessed within the workflow using the secrets context. 
 
 Finally, I verified that the Docker container was running as expected and confirmed the application was accessible at http://<EC2-publicip>:3000.
@@ -57,4 +60,4 @@ Dockerfile – For Docker build
 
 .github/workflows/deploy.yml – GitHub Actions workflow
 
-README.md – This file
+Readme.md --about workflow
