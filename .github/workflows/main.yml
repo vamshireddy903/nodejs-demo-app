@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build Docker Image
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - name: Checkout code
@@ -22,7 +22,7 @@ jobs:
 
   test:
     name: Test Node App
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: build
 
     steps:
@@ -37,7 +37,7 @@ jobs:
 
   push:
     name: Push to DockerHub
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: test
 
     steps:
