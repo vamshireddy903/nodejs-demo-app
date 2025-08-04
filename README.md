@@ -1,2 +1,60 @@
 # nodejs-demo-app
 This Project is all about implementing Github CICD for Node.js based application
+
+# Overview:
+Automate the deployment of a Node.js web app using GitHub Actions for continuous integration and deployment (CI/CD).
+
+Tech Stack & Tools:
+Node.js – Web application 
+
+Docker – Containerize the application
+
+GitHub Actions – CI/CD pipeline
+
+GitHub Self-hosted Runner – Run the pipeline on EC2 instance
+
+Steps Performed:
+Created Node.js web app
+
+Created a simple app in index.js with express to return Hello from Node.js!.
+
+Used package.json to define dependencies.
+
+Dockerized the Application
+
+Created a Dockerfile to containerize the app
+
+Exposed port 3000
+
+Created GitHub Workflow (CI/CD)
+
+Created .github/workflows/main.yml
+
+# Workflow steps:
+
+1. Checkout code
+
+2. Set up Node.js environment
+
+3. Install dependencies
+
+4. Build and run Docker container and push to docker hub
+
+After developing and dockerizing the Node.js application, I initially tested the CI/CD pipeline using a GitHub hosted runner. The workflow executed successfully, verifying the build process and Docker container run through the GitHub Actions tab. Once confirmed I proceeded to configure a self-hosted runner on my local machine. I registered the runner with the repository via the GitHub settings and reran the workflow, which again executed successfully on the self hosted runner.
+
+To securely manage sensitive information, I stored necessary credentials and configuration values in GitHub → Actions → New Repository Secrets under Secrets and variables. These were then accessed within the workflow using the secrets context. 
+
+Finally, I verified that the Docker container was running as expected and confirmed the application was accessible at http://<EC2-publicip>:3000.
+
+
+
+📂 Files Included:
+index.js – Node.js app
+
+package.json – Node.js dependencies
+
+Dockerfile – For Docker build
+
+.github/workflows/deploy.yml – GitHub Actions workflow
+
+README.md – This file
